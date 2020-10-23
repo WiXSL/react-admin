@@ -2034,17 +2034,22 @@ export const PostList = props => (
 
 The `Datagrid` component accepts the usual `className` prop but you can override many class names injected to the inner components by React-admin thanks to the `classes` property (as most Material UI components, see their [documentation about it](https://material-ui.com/customization/components/#overriding-styles-with-classes)). This property accepts the following keys:
 
-| Rule name     | Description                                                   |
-| ------------- | ------------------------------------------------------------- |
-| `table`       | Alternative to using `className`. Applied to the root element |
-| `tbody`       | Applied to the tbody                                          |
-| `headerCell`  | Applied to each header cell                                   |
-| `row`         | Applied to each row                                           |
-| `rowEven`     | Applied to each even row                                      |
-| `rowOdd`      | Applied to the each odd row                                   |
-| `rowCell`     | Applied to the each row cell                                  |
+| Rule name      | Description                                                   |
+| Rule name      | Description                                                   |
+| -------------- | ------------------------------------------------------------- |
+| `table`        | Alternative to using `className`. Applied to the root element |
+| `thead`        | Applied to the header                                         |
+| `tbody`        | Applied to the tbody                                          |
+| `headerCell`   | Applied to each header cell                                   |
+| `headerRow`    | Applied to each row                                           |
+| `row`          | Applied to each row                                           |
+| `rowEven`      | Applied to each row cell                                      |
+| `expandHeader` | Applied to each row cell when `expand` prop is set            |
 
-You can customize the `<Datagrid>` styles by passing a `classes` object as prop, through `useStyles()`. Here is an example:
+
+To override the style of all instances of `<Datagrid>` using the [material-ui style overrides](https://material-ui.com/customization/globals/#css), use the `RaDatagrid` key.
+
+Here is an example of how you can override some of these classes:
 
 {% raw %}
 ```jsx
