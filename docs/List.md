@@ -2048,7 +2048,7 @@ The `Datagrid` component accepts the usual `className` prop but you can override
 
 To override the style of all instances of `<Datagrid>` using the [material-ui style overrides](https://material-ui.com/customization/globals/#css), use the `RaDatagrid` key.
 
-Here is an example of how you can override some of these classes:
+You can customize the `<Datagrid>` styles by passing a `classes` object as prop, through `useStyles()`. Here is an example:
 
 {% raw %}
 ```jsx
