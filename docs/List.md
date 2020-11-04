@@ -2035,7 +2035,6 @@ export const PostList = props => (
 The `Datagrid` component accepts the usual `className` prop but you can override many class names injected to the inner components by React-admin thanks to the `classes` property (as most Material UI components, see their [documentation about it](https://material-ui.com/customization/components/#overriding-styles-with-classes)). This property accepts the following keys:
 
 | Rule name      | Description                                                   |
-| Rule name      | Description                                                   |
 | -------------- | ------------------------------------------------------------- |
 | `table`        | Alternative to using `className`. Applied to the root element |
 | `thead`        | Applied to the header                                         |
