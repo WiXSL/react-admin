@@ -53,7 +53,7 @@ const PostQuickCreate = ({ onCancel, onSave, ...props }) => {
                         callback: ({ payload: { data } }) => onSave(data),
                     },
                     onFailure: {
-                        callback: ({ error }) => {
+                        callback: error => {
                             dispatch(showNotification(error.message, 'error'));
                         },
                     },
